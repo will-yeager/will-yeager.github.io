@@ -1,20 +1,39 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
 
     background: #008FE8;
 }
 
 /* NAVBAR */
 nav > .container-fluid {
-    margin: 5px;
+    margin: 0.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .nav-link {
-    transition: color 0.5s;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color : black!important;
+    transition: color 100ms;
 }
 
 .nav-link:hover {
-    
     color: #008FE8!important;
 }
+
+/* Efeito embaixo das nav link */
+.nav-link::after {
+    content: '';
+    width: 0px;
+    height: 0.2rem;
+    display: block;
+    background: #0085d8;
+    transition: 200ms;
+}
+  
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Home */
