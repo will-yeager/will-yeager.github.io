@@ -37,3 +37,28 @@ nav > .container-fluid {
 }
 
 /* Home */
+#Home {
+    width: 100%;
+    height: 780px;
+    color: white;
+
+    background: #2d383f;
+}
+
+#Portfolio {
+    width: 100%;
+    height: 780px;
+    background: white;
+}
+
+#Habilidades{
+    width: 100%;
+    height: 780px;
+    background: #2d383f;
+}
+
+#Contato {
+    width: 100%;
+    height: 780px;
+    background: white;
+}
