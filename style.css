@@ -1,7 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-
-    background: #008FE8;
+    font-family: 'KoHo', sans-serif;
 }
 
 /* NAVBAR */
@@ -37,14 +35,102 @@ nav > .container-fluid {
 }
 
 /* Home */
+#Home > h1, #Home > p:nth-child(1), #Home > p:nth-child(2), #Home > p:nth-child(3){
+    animation: loadpageY 2s;
+}
+
+
 #Home {
     width: 100%;
     height: 780px;
     color: white;
 
-    background: #2d383f;
+    background: #000000;
+    padding: 1rem;
+    padding-top: 6rem;
 }
 
+#Home > h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+}
+
+h1 > a {
+    color: #008FE8!important;
+    margin-bottom: 0;
+}
+
+#Home > p:nth-child(1) {
+    font-size: 1.5rem;
+    color: #008FE8!important;
+    margin-bottom: 0;
+}
+
+#Home > p:nth-child(3) {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+#Home > p:nth-child(4) {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+
+    opacity: 0;
+    animation: loadpageY 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#Home > p:nth-child(4) > a {
+    color: #008FE8!important;
+    text-decoration: underline;
+
+}
+
+#Home > p:nth-child(5){
+    animation: loadpageY 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+/* Icones Social Medias */
+p > a {
+    color: white;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+
+    animation: loadpageY 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+p > a:hover {
+    color: #008FE8;
+}
+
+p > a > i {
+    letter-spacing: 5px;
+    
+}
+
+/* Animação quando abre a página HOME*/
+@keyframes loadpageY {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Portfólio */
 #Portfolio {
     width: 100%;
     height: 780px;
