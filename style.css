@@ -191,6 +191,7 @@ p > a > i {
 
 #projetosFlex > .card > img{
     border-radius: 0;
+    transition: 0.5s;
 }
 
 /* Ficar azul quando houver hover e aparecer o card text e dar zoom */
