@@ -52,7 +52,6 @@ nav > .container-fluid {
     padding: 1rem;
     padding-top: 6rem;
 
-    margin-bottom: 3rem;
 }
 
 #Home > h1 {
@@ -101,7 +100,7 @@ h1 > a {
 }
 
 /* Icones Social Medias */
-p > a {
+#Home > p > a {
     color: white;
     opacity: 0;
     text-decoration: none;
@@ -113,11 +112,11 @@ p > a {
     animation-fill-mode: forwards;
 }
 
-p > a:hover {
+#Home > p > a:hover {
     color: #008FE8;
 }
 
-p > a > i {
+#Home > p > a > i {
     letter-spacing: 5px;
     
 }
@@ -135,11 +134,25 @@ p > a > i {
     }
 }
 
+/* Espaçamento Portfolio */
+#portfolio {
+    background: black;
+    content: "";
+    height: 5rem;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+}
+
 /* Portfólio */
 #Portfolio {
     text-align: center;
     width: 100%;
     color: #008FE8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Portfolio > h1 {
@@ -168,7 +181,7 @@ p > a > i {
 }
 
 .bg-dark{
-    background-color: #0085d8!important ;
+    background-color: #008FE8!important ;
 }
 
 @media (min-width: 768px) {
@@ -206,14 +219,45 @@ p > a > i {
     transition: 1s;
 }
 
+/* Botão github */
+#buttongithub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+    width: 150px;
+    height: 50px;
 
+    border-radius: 100px;
+
+    border: 1px solid black;
+    background: linear-gradient(to top, #000 50%, #fff 50%);
+    background-size: 100% 200%;
+    background-position: top left;
+    transition: all .4s ease-out;
+
+}
+
+#buttongithub {
+    font-size: calc(1.375rem + .2vw);
+    text-decoration: none;
+}
+
+#buttongithub > p {
+    margin: 0;
+}
+#buttongithub:hover {
+    background-position: bottom left;
+    color: #fff;
+}
 
 /* Habilidades */
 
 #Habilidades{
     width: 100%;
     height: 780px;
-    background: #2d383f;
+    background: #008FE8;
 }
 
 #Contato {
