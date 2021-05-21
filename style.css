@@ -51,6 +51,8 @@ nav > .container-fluid {
     background: #000000;
     padding: 1rem;
     padding-top: 6rem;
+
+    margin-bottom: 3rem;
 }
 
 #Home > h1 {
@@ -135,10 +137,77 @@ p > a > i {
 
 /* Portfólio */
 #Portfolio {
+    text-align: center;
     width: 100%;
-    height: 780px;
-    background: white;
+    color: #008FE8;
 }
+
+#Portfolio > h1 {
+    font-size: calc(1.375rem + 3vw);
+
+    font-weight: bold;
+}
+
+/* Projetos */
+#projetosFlex {
+    margin-top: 4rem;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Card dos Projetos */
+#projetosFlex > .card{
+    max-width: 100%;
+    overflow: hidden;
+    border: none;    
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.bg-dark{
+    background-color: #0085d8!important ;
+}
+
+@media (min-width: 768px) {
+    #projetosFlex > .card{
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #projetosFlex > .card{
+        max-width: 25%;
+    }
+}
+
+/* Opacidade do Card Text */
+.card-img-overlay {
+    top: 25%;
+    opacity: 0;
+}
+
+#projetosFlex > .card > img{
+    border-radius: 0;
+}
+
+/* Ficar azul quando houver hover e aparecer o card text e dar zoom */
+#projetosFlex > .card:hover img{
+    opacity: 0.1;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+#projetosFlex > .card:hover .card-img-overlay {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+/* Habilidades */
 
 #Habilidades{
     width: 100%;
