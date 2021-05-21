@@ -275,7 +275,7 @@ h1 > a {
     align-self: flex-start;
 }
 
-#habilidadesflex {
+#habilidadesFlex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -287,7 +287,7 @@ h1 > a {
 }
 
 /* Box de cada Habilidade */
-#habilidadesflex > #box {
+#habilidadesFlex > #box {
     background: white;
     margin: 1rem;
     border-radius: 10px;
@@ -333,9 +333,90 @@ h1 > a {
     color: #ef4f32;
 }
 
-
+/* Contato */
 #Contato {
     width: 100%;
-    height: 780px;
-    background: white;
+    background: rgb(255, 255, 255);
+    color: #008FE8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Contato > h1 {
+    font-size: calc(1.375rem + 3vw);
+    font-weight: bold;
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#contatoFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contatoFlex > #boxContato {
+    width: 280px;
+    height: 150px;
+    margin: 0.7rem;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+
+    transition: 0.2s;
+
+}
+
+#boxContato > i {
+    color: #008FE8;
+    font-size: calc(2rem);
+}
+
+#boxContato > p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    letter-spacing: 0.1rem;
+    
+    font-weight: bold;
+}
+
+
+/* hover das boxes de Contato */
+#contatoFlex > #boxContato:hover {
+    border: 6px double white;
+    background: #008FE8;
+
+}
+
+#contatoFlex > #boxContato:hover i {
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100px;
+    margin-top: 4rem;
+
+    font-size: 1.2rem;
+
+    background: black;
+    color: white;
 }
