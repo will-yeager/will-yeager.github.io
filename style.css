@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     font-family: 'KoHo', sans-serif;
 }
 
@@ -198,7 +199,10 @@ h1 > a {
 
 /* Opacidade do Card Text */
 .card-img-overlay {
-    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
 }
 
@@ -217,6 +221,12 @@ h1 > a {
 #projetosFlex > .card:hover .card-img-overlay {
     opacity: 1;
     transition: 1s;
+}
+
+/* Texto dos cards */
+
+.card-text > i {
+    font-size: 2rem;
 }
 
 /* Botão github */
@@ -420,3 +430,65 @@ footer {
     background: black;
     color: white;
 }
+
+/* Media Query - Tablet */
+
+@media (min-width: 768px) {
+    #Home > h1, #Home > p { 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #Home > h1 {
+        font-size: 4rem;
+    }
+    
+    #Home > p:nth-child(1) {
+        font-size: 2rem;
+    }
+    
+    #Home > p:nth-child(3) {
+        font-size: 2rem;
+    }
+    
+    #Home > p:nth-child(4) {
+        font-size: 1.3rem;
+    }
+    
+    /* Icones Social Medias */
+    #Home > p > a {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    #Home > h1, #Home > p { 
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #Home > h1 {
+        font-size: 5rem;
+    }
+
+    #Home > p:nth-child(1) {
+        font-size: 2.5rem;
+    }
+    
+    #Home > p:nth-child(3) {
+        font-size: 2.5rem;
+    }
+    
+    #Home > p:nth-child(4) {
+        font-size: 1.5rem;
+    }
+    
+    /* Icones Social Medias */
+    #Home > p > a {
+        font-size: 1.5rem;
+    }
+    
+}
+
+
