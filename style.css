@@ -463,6 +463,14 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    /* Nav bar */
+    nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+
     #Home > h1, #Home > p { 
         margin-left: 10%;
         margin-right: 10%;
